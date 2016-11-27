@@ -15,10 +15,16 @@ class complex
 		long double degree() const;
 		long double magnitude() const;
 		
-		complex operator+(const complex &o);
-		complex operator-(const complex &o);
-		complex operator*(const complex &o);
-		complex operator/(const complex &o);
+		complex operator+(const complex &o) const;
+		complex operator-(const complex &o) const;
+		complex operator*(const complex &o) const;
+		complex operator/(const complex &o) const;
+		
+		void operator+=(const complex &o);
+		void operator-=(const complex &o);
+		void operator*=(const complex &o);
+		void operator/=(const complex &o);
+
 };
 
 #endif
